@@ -21,5 +21,25 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/about', function () {
-    return view('about');
-})->name('about');
+    $menu=config('menu');
+    $icons=config('icons');
+    return view('about',compact('menu','icons'));
+})->name('chi siamo');
+
+Route::get('/donna', function () {
+    $menu=config('menu');
+    $icons=config('icons');
+    return view('donna',compact('menu','icons',));
+})->name('donna');
+
+Route::get('/uomo', function () {
+    $menu=config('menu');
+    $icons=config('icons');
+    return view('uomo',compact('menu','icons',));
+})->name('uomo');
+
+Route::get('/bambini', function () {
+    $menu=config('menu');
+    $icons=config('icons');
+    return view('bambini',compact('menu','icons',));
+})->name('bambini');

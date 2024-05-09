@@ -3,16 +3,16 @@
 return[
    "options"=>
     [
-        "name"=>'Donna'
+        "name"=>'donna'
     ],
     [
-        "name"=>'Uomo'
+        "name"=>'uomo'
     ],
     [
-        "name"=>'Bambini'
+        "name"=>'bambini'
     ],
     [
-        "name"=>'Chi siamo'
+        "name"=>'chi siamo'
     ],
 
 ];

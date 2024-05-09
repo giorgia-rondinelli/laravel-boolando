@@ -1,12 +1,12 @@
-<header>
-    <div class="fisso">
-      <div class="contenitore intestazione">
-        <nav>
+<header class="">
+    <div class="fisso ">
+      <div class="contenitore intestazione  ">
+        <nav class="">
           <ul>
             @foreach ($menu as $item )
 
 
-            <li><a href="" >{{ $item['name'] }}</a></li>
+            <li><a href="{{route($item['name'])}}" >{{ $item['name'] }}</a></li>
             @endforeach
           </ul>
         </nav>
