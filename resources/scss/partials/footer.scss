@@ -1,0 +1,26 @@
+footer{
+    height: 70px;
+    background-color:$bg-footer;
+    color:$text-white;
+    .foot{
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h5{
+        font-size: .9rem;
+      }
+      span{
+        font-size: .7em;
+        margin-right: 5px;
+      }
+      div{
+        margin-top: 8px;
+        i{
+          margin-right: 5px;
+        }
+
+      }
+
+    }
+  }
