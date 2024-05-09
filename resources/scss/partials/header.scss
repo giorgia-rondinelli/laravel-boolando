@@ -1,0 +1,38 @@
+header{
+    margin-bottom:40px;
+    display:flex ;
+    justify-content:center;
+    .fisso{
+    position:fixed ;
+        background-color:$bg-header ;
+        width: 100%;
+        z-index: 1;
+      .intestazione{
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        ul{
+          list-style: none;
+          display: flex;
+          a{
+            color:$text-white;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 4px;
+          }
+        }
+        img{
+          height: 25px;
+        }
+        .icone{
+          color:$text-white;
+          font-size: 12px;
+          i{
+            padding: 3px
+          }
+        }
+      }
+    }
+  }

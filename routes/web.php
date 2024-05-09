@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $menu=config('menu');
+    $icons=config('icons');
+    return view('home', compact('menu','icons'));
 })->name('home');
 
 Route::get('/about', function () {
