@@ -13,8 +13,14 @@
               <img src="{{ Vite::asset('resources/img/') . $card['frontImage'] }}" alt="">
               <img  class="seconda-immagine" src="{{Vite::asset('resources/img/'. $card['backImage'])}}" alt="">
               <div class="cuore nero">&#9829;</div>
-              <div class=" etichetta sale half" >{{$card['value']}}</div>
-              <div class=" etichetta sostenibilità">{{$card['eco']}}</div>
+              @if ($card['value'])
+                 <div class=" etichetta sale half" >{{$card['value']}}</div>
+              @endif
+
+              @if ($card['eco'])
+                  <div class=" etichetta sostenibilità">{{$card['eco']}}</div>
+              @endif
+
             </div>
             <div class="marca">{{$card['brand']}}</div>
             <div class="descrizione">{{$card['name']}}</div>
